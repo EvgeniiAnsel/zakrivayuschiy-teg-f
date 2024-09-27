@@ -43,7 +43,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root.theme-dark {
+    :root {
         /*COLOR*/
         
         --main-color: #00cc14;

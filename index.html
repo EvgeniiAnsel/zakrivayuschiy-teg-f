@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -91,10 +91,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;/HTML&gt;</span>
-          <div class="card-image image__vintage">
+          <div class="image__vintage">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -130,10 +131,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;css&gt;</span>
-          <div class="card-image image__blackandwhite">
+          <div class="image__blackandwhite">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -169,10 +171,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;desigions&gt;</span>
-          <div class="card-image image__inversion">
+          <div class="image__inversion">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -208,10 +211,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">care</span>
-          <div class="card-image image__blackmirror">
+          <div class="image__blackmirror">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -247,10 +251,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;support&gt;</span>
-          <div class="card-image image__pastel">
+          <div class="image__pastel">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -286,10 +291,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;lifes-style: none;&gt;</span>
-          <div class="card-image image__aqua">
+          <div class="image__aqua">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -325,10 +331,11 @@
         </h2>
         <div class="card-list__watermark">
           <span class="watermark">&lt;experience&gt;</span>
-          <div class="card-image image__space">
+          <div class="image__space">
             <img
               src="./images/image__bus.jpg"
               alt="Грузовик для продажи мороженого в стиле пиксель-арт"
+              class="card-list__watermark"
             />
           </div>
         </div>
@@ -359,7 +366,7 @@
         </div>
       </article>
       <button type="button" class="button memory-button" onclick="window['modal-id'].showModal()" aria-controls="modal-id">
-        <svg width="100%" height="100%" viewBox="0 0 40 40">
+        <svg width="100%" height="39" viewBox="0 0 40 40">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text memory-button__text">
@@ -377,11 +384,13 @@
           дискету, чтобы продолжить
         </h3>
       </div>
-      <button type="submit" class="button dialog__button" onclick="window['modal-id'].close()">
-        <span class="button__text">
-          ок
-        </span>
-      </button>
+      <form method="dialog">
+        <button type="submit" class="button dialog__button">
+          <span class="button__text">
+            ок
+          </span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
