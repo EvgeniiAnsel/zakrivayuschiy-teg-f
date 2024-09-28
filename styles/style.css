@@ -204,7 +204,7 @@
 @supports (-webkit-text-stroke: 1px #fff) {
   .watermark {
     text-shadow: none;
-    -webkit-text-stroke: 0.5px var(--background-color, #fff);
+    -webkit-text-stroke: 1px var(--background-color, #fff);
   }
 }
 
@@ -406,7 +406,7 @@
 /*PHONE*/
 
 @media (max-width: 375px) {
-  .modal {
+  .modal[open] {
     padding: 30px 42px;
     max-inline-size: 341px;
   }
@@ -417,21 +417,22 @@
 
   .memory-button {
     flex-direction: column;
+    padding: 14px 20px;
+    gap: 6px;
   }
 
   .header {
-    margin: 50px auto 104px;
-    padding: 10px;
+    margin: 100px auto 100px;
   }
   
   .main {
     gap: 50px;
+    width: 100.2%;
   }
 
   .card {
     width: 100%;
     max-width: none;
-    margin-top: 4px;
   }
 
   .memory-button__text {
@@ -439,12 +440,31 @@
   }
 
   .card-list__title {
-    padding: 6px 0 0px 13px;
+    padding: 1px 10px 0px 9px;
+    line-height: 24px;
   }
+
   .card-list__description {
-    gap: 26px;
+    gap: 32px;
+    padding-top: 19px;
+    padding-right: 31px;
  }
+
  .card__like {
-    padding: 0px 24px 22px 0;
+    padding: 0px 26px 22px 0;
   }
+
+  .header__theme-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+ }
+
+ .header__logo {
+   margin-top: 100px;
+ }
+
+ .theme-menu__list {
+   row-gap: 10px;
+ }
 }
